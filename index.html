@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <title>Mogo</title>
+</head>
+
+    
+    
+<body id="body">
+
+    <svg display="none">
+        <symbol id="tumblr" viewBox="0 0 512 512">
+            <g>
+                <path d="M348.832,428.544c-14.208,0-27.52-3.328-38.528-10.048c-8.8-5.12-16.544-13.824-19.616-22.112
+                    c-3.072-8.448-2.752-25.728-2.752-55.296V223.84h128.096v-95.808H287.936V0h-82.528c-3.328,26.336-9.312,48.192-18.112,65.088
+                    c-8.416,17.216-20.256,31.776-34.24,44.096c-14.464,12.192-36.864,21.504-57.088,28.128v72.544h68.704V389.28
+                    c0,23.52,2.368,41.472,7.424,53.728c4.96,12.352,13.44,23.968,26.4,34.848c12.736,11.008,27.968,19.456,46.176,25.408
+                    C262.4,509.12,276.352,512,299.808,512c20.576,0,39.808-1.952,57.408-6.272c17.632-4,36.8-10.08,58.816-20.352v-76.96
+                    C390.304,425.216,374.784,428.544,348.832,428.544z"/>
+            </g>
+        </symbol>
+        <symbol id="youtube" viewBox="-21 -117 682.66672 682">
+            <g>
+                <path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/>
+            </g>
+        </symbol>
+        <symbol id="g+" viewBox="0 0 475.092 475.092">
+            <g>
+                <path d="M273.372,302.498c-5.041-6.762-10.608-13.045-16.7-18.842c-6.091-5.804-12.183-11.088-18.271-15.845
+			    c-6.092-4.757-11.659-9.329-16.702-13.709c-5.042-4.374-9.135-8.945-12.275-13.702c-3.14-4.757-4.711-9.61-4.711-14.558
+			    c0-6.855,2.19-13.278,6.567-19.274c4.377-5.996,9.707-11.799,15.986-17.417c6.28-5.617,12.559-11.753,18.844-18.415
+			    c6.276-6.665,11.604-15.465,15.985-26.412c4.373-10.944,6.563-23.458,6.563-37.542c0-16.75-3.713-32.835-11.136-48.25
+			    c-7.423-15.418-17.89-27.412-31.405-35.976h38.54L303.2,0H178.441c-17.699,0-35.498,1.906-53.384,5.72
+			    c-26.453,5.9-48.723,19.368-66.806,40.397C40.171,67.15,31.129,90.99,31.129,117.637c0,28.171,10.138,51.583,30.406,70.233
+			    c20.269,18.649,44.585,27.978,72.945,27.978c5.71,0,12.371-0.478,19.985-1.427c-0.381,1.521-1.043,3.567-1.997,6.136
+			    s-1.715,4.62-2.286,6.14c-0.57,1.521-1.047,3.375-1.425,5.566c-0.382,2.19-0.571,4.428-0.571,6.71
+			    c0,12.563,6.086,26.744,18.271,42.541c-14.465,0.387-28.737,1.67-42.825,3.86c-14.084,2.19-28.833,5.616-44.252,10.28
+			    c-15.417,4.661-29.217,11.42-41.396,20.27c-12.182,8.854-21.317,19.366-27.408,31.549C3.533,361.559,0.01,374.405,0.01,386.017
+			    c0,12.751,2.857,24.314,8.565,34.69c5.708,10.369,13.035,18.842,21.982,25.406c8.945,6.57,19.273,12.083,30.978,16.562
+			    c11.704,4.47,23.315,7.659,34.829,9.562c11.516,1.903,22.888,2.854,34.119,2.854c51.007,0,90.981-12.464,119.909-37.397
+			    c26.648-23.223,39.971-50.062,39.971-80.517c0-10.855-1.57-20.984-4.712-30.409C282.51,317.337,278.42,309.254,273.372,302.498z
+                M163.311,198.722c-9.707,0-18.937-2.475-27.694-7.426c-8.757-4.95-16.18-11.374-22.27-19.273
+                c-6.088-7.898-11.418-16.796-15.987-26.695c-4.567-9.896-7.944-19.792-10.135-29.692c-2.19-9.895-3.284-19.318-3.284-28.265
+                c0-18.271,4.854-33.974,14.562-47.108c9.705-13.134,23.411-19.701,41.112-19.701c12.563,0,23.935,3.899,34.118,11.704
+                c10.183,7.804,18.177,17.701,23.984,29.692c5.802,11.991,10.277,24.407,13.417,37.257c3.14,12  .847,4.711,24.983,4.711,36.403
+                c0,19.036-4.139,34.317-12.419,45.833C195.144,192.964,181.775,198.722,163.311,198.722z M242.251,413.123
+                c-5.23,8.949-12.319,15.94-21.267,20.981c-8.946,5.048-18.509,8.758-28.693,11.14c-10.183,2.385-20.889,3.572-32.12,3.572
+                c-12.182,0-24.27-1.431-36.258-4.284c-11.99-2.851-23.459-7.187-34.403-12.991c-10.944-5.8-19.795-13.798-26.551-23.982
+                c-6.757-10.184-10.135-21.744-10.135-34.69c0-11.419,2.568-21.601,7.708-30.55c5.142-8.945,11.709-16.084,19.702-21.408
+                c7.994-5.332,17.319-9.713,27.979-13.131c10.66-3.433,20.937-5.808,30.833-7.139c9.895-1.335,19.985-1.995,30.262-1.995
+                c6.283,0,11.043,0.191,14.277,0.567c1.143,0.767,4.043,2.759,8.708,5.996s7.804,5.428,9.423,6.57
+                c1.615,1.137,4.567,3.326,8.85,6.563c4.281,3.237,7.327,5.661,9.135,7.279c1.803,1.618,4.421,4.045,7.849,7.279
+                c3.424,3.237,5.948,6.043,7.566,8.422c1.615,2.378,3.616,5.28,5.996,8.702c2.38,3.433,4.043,6.715,4.998,9.855
+                c0.948,3.142,1.854,6.567,2.707,10.277c0.855,3.72,1.283,7.569,1.283,11.57C250.105,393.713,247.487,404.182,242.251,413.123z"/>
+            </g>
+        </symbol>
+        <symbol id="location" viewBox="0 0 512 512">
+            <g>
+                <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035
+                    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719
+                    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z"/>
+            </g>
+        </symbol>
+        <symbol id="views" viewBox="0 0 488.85 488.85">
+            <g>
+                <path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
+                    s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
+                    c-62,3.9-113.2-47.2-109.3-109.3c3.2-51.2,44.7-92.7,95.9-95.9c62-3.9,113.2,47.2,109.3,109.3
+                    C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7
+                    c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
+            </g>
+        </symbol>
+        <symbol id="comment" viewBox="0 0 60 60">
+            <g>
+                <path d="M30,1.5c-16.542,0-30,12.112-30,27c0,5.204,1.646,10.245,4.768,14.604c-0.591,6.537-2.175,11.39-4.475,13.689
+                c-0.304,0.304-0.38,0.769-0.188,1.153C0.275,58.289,0.625,58.5,1,58.5c0.046,0,0.092-0.003,0.139-0.01
+                c0.405-0.057,9.813-1.411,16.618-5.339C21.621,54.71,25.737,55.5,30,55.5c16.542,0,30-12.112,30-27S46.542,1.5,30,1.5z M16,32.5
+                c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S18.206,32.5,16,32.5z M30,32.5c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S32.206,32.5,30,32.5z M44,32.5c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S46.206,32.5,44,32.5z"/>
+            </g>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 24 24">
+            <g>
+            <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+            </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 24 24">
+            <g>
+                <path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/>
+            </g>
+        </symbol>
+
+        <symbol id="instagram" viewBox="0 0 438.536 438.536">
+            <g>
+                <path d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562
+                    C5.52,27.6,0.001,40.828,0.001,56.243V382.29c0,15.413,5.518,28.644,16.56,39.683c11.043,11.04,24.272,16.563,39.687,16.563
+                    h326.046c15.41,0,28.644-5.523,39.684-16.563c11.043-11.039,16.557-24.27,16.557-39.683V56.243
+                    C438.534,40.825,433.021,27.604,421.981,16.562z M157.462,158.025c17.224-16.652,37.924-24.982,62.097-24.982
+                    c24.36,0,45.153,8.33,62.381,24.982c17.228,16.655,25.837,36.785,25.837,60.386c0,23.598-8.609,43.729-25.837,60.379
+                    c-17.228,16.659-38.014,24.988-62.381,24.988c-24.172,0-44.87-8.336-62.097-24.988c-17.228-16.652-25.841-36.781-25.841-60.379
+                    C131.621,194.81,140.234,174.681,157.462,158.025z M388.865,370.589c0,4.945-1.718,9.083-5.141,12.416
+                    c-3.433,3.33-7.519,4.996-12.282,4.996h-305.2c-4.948,0-9.091-1.666-12.419-4.996c-3.333-3.326-4.998-7.471-4.998-12.416V185.575
+                    H89.08c-3.805,11.993-5.708,24.462-5.708,37.402c0,36.553,13.322,67.715,39.969,93.511c26.65,25.786,58.721,38.685,96.217,38.685
+                    c24.744,0,47.583-5.903,68.527-17.703c20.937-11.807,37.486-27.839,49.676-48.112c12.183-20.272,18.274-42.4,18.274-66.38
+                    c0-12.94-1.91-25.406-5.715-37.402h38.547v185.014H388.865z M388.865,115.626c0,5.52-1.903,10.184-5.716,13.99
+                    c-3.805,3.809-8.466,5.711-13.989,5.711h-49.676c-5.517,0-10.185-1.903-13.99-5.711c-3.806-3.806-5.708-8.47-5.708-13.99V68.522
+                    c0-5.33,1.902-9.945,5.708-13.848c3.806-3.901,8.474-5.854,13.99-5.854h49.676c5.523,0,10.185,1.952,13.989,5.854
+                    c3.812,3.903,5.716,8.518,5.716,13.848V115.626z"/>
+            </g>
+        </symbol>
+
+        <symbol id="pinterest" viewBox="-62 0 512 512">
+            <path d="m60.945312 278.21875c.640626-1.597656 7.050782-26.230469 7.5-27.898438-10.007812-15.058593-21.125-64.371093-12.597656-104.398437 9.199219-58.730469 71.4375-87.601563 130.199219-87.601563v-.109374c73.570313.046874 128.640625 40.980468 128.699219 111.476562.046875 55.179688-33.195313 128.117188-89.957032 128.117188-.015624 0-.027343 0-.042968 0-20.257813 0-45.90625-9.1875-52.632813-18.210938-7.761719-10.398438-9.667969-23.230469-5.566406-36.941406 10.050781-32.082032 22.867187-70.511719 24.363281-96.136719 1.386719-24.183594-15.773437-39.917969-38.027344-39.917969-16.746093 0-38.496093 9.726563-49.335937 37.058594-8.953125 22.707031-8.761719 46.480469.585937 72.671875 3.644532 10.238281-16.15625 76.984375-22.5 98.71875-15.761718 53.992187-37.339843 122.304687-32.726562 160.347656l4.453125 36.605469 22.367187-29.3125c30.953126-40.519531 62.957032-145.332031 71.484376-170.835938 25.210937 32.648438 77.710937 33.585938 83.832031 33.585938 75.183593 0 160.4375-74.65625 158.019531-178.5625-2.121094-91.121094-68.808594-166.875-188.632812-166.875v.117188c-113.976563 0-180.5 60.835937-196.785157 137.703124-14.914062 71.273438 18.253907 125.519532 57.300781 140.398438zm0 0"/>
+        </symbol>
+    </svg>
+    
+    <!--    intro    -->
+
+
+<div class="wrapper_all">
+    <!--HEADER-->
+
+    
+
+
+    <!--INTRO-->
+
+    <div class="intro" id="intro">
+
+
+
+        <header class="header">
+            <div class="container">
+                <div class="header_inner">
+                    <div class="logo"><a id="mogo" href="#body">MoGo</a></div>
+    
+                    <nav>
+                        <a href="#about" class="nav_link">ABOUT</a>
+                        <a href="#service" class="nav_link">SERVICE</a>
+                        <a href="#work" class="nav_link">WORK</a>
+                        <a href="#blog" class="nav_link">BLOG</a>
+                        <a href="#contacts" class="nav_link">CONTACT</a>
+                    </nav>
+                </div>
+            </div>    
+        </header>
+
+
+        <div class="intro_inner">
+            <div class="intro_subtitle">Creative Template</div>
+            <div class="intro_title">WELCOME TO MOGO</div>
+        </div>
+        <div class="container">
+                <a href="#" class="button">LEARN MORE</a>
+        </div>
+        
+        <div class="container">
+            <div class="slider">
+                <div class="slider_unit"><div class="span"><span>01</span> INTRO</div></div>
+                <div class="slider_unit"><div class="span"><span>02</span> WORK</div></div>
+                <div class="slider_unit"><div class="span"><span>03</span> ABOUT</div></div>
+                <div class="slider_unit"><div class="span"><span>04</span> CONTACTS</div></div>
+            </div>
+        </div>
+
+
+        <!--WORK-->
+        
+        <div class="container">
+            <div class="work1" id="about">
+                <div class="work1_head">
+                    <div class="work1_title">What we do</div>
+                    <div class="work1_subtitle">STORY ABOUT US</div>
+                    <div class="work1_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus nisi vel libero ullamcorper tincidunt. Nunc urna quam, consequat placerat odio faucibus, commodo sodales diam. Mauris bibendum sollicitudin tempus. Mauris lacinia tellus enim, eu egestas ex.</div>
+                </div>
+                
+                <div class="job">
+                    <div class="job_unit">
+                        <img class="jobu_img" src="img/job1.png">
+                        <img class="job_gradi" src="img/job_gradient.png">
+                        <img class="job_ico" src="img/team_ico.png">
+                        <div class="job_text">SUPER TEAM</div>
+                    </div>
+                    <div class="job_unit">
+                        <img class="jobu_img" src="img/job2.png">
+                        <img class="job_gradi" src="img/job_gradient.png">
+                        <img class="job_ico" src="img/team_ico.png">
+                        <div class="job_text">SUPER TEAM</div>
+                    </div>
+                    <div class="job_unit">
+                        <img class="jobu_img" src="img/job3.png">
+                        <img class="job_gradi" src="img/job_gradient.png">
+                        <img class="job_ico" src="img/team_ico.png">
+                        <div class="job_text">SUPER TEAM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--STATS-->
+        
+        <div class="statistics">
+            <div class="container">
+                <div class="stats_inner">
+                    <div class="stats">
+                        <div class="stats_num">42</div>
+                        <div class="stats_text">WEB DESIGN PROJECTS</div>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stats_num">123</div>
+                        <div class="stats_text">HAPPY CLIENT</div>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stats_num">15</div>
+                        <div class="stats_text">AWARD WINNER</div>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stats_num">99</div>
+                        <div class="stats_text">CUP OF COFFEE</div>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stats_num">24</div>
+                        <div class="stats_text">MEMBERS</div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!--WORK-->
+        
+        <div class="container">
+            <div class="work">
+                <div class="work_header">
+                    <div class="work_title">We work with</div>
+                    <div class="work_subtitle">AMAZING SERVICES</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--WORK CARDS-->
+        
+        <div class="container">
+            <div class="cards">
+                <div class="card">
+                    <img class="card_ico" src="img/workcard1.png">
+                    <div class="text">
+                        <div class="card_title">PHOTOGRAPHY</div>
+                        <div class="card_subscript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet dignissim.</div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img class="card_ico" src="img/workcard2.png">
+                    <div class="text">
+                        <div class="card_title">WEB DESIGN</div>
+                        <div class="card_subscript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet dignissim.</div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img class="card_ico" src="img/workcard3.png">
+                    <div class="text">
+                        <div class="card_title">CREATIVITY</div>
+                        <div class="card_subscript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet dignissim.</div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img class="card_ico" src="img/workcard4.png">
+                    <div class="text">
+                        <div class="card_title">SEO</div>
+                        <div class="card_subscript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet dignissim.</div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img class="card_ico" src="img/workcard5.png">
+                    <div class="text">
+                        <div class="card_title">CSS/HTML</div>
+                        <div class="card_subscript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet dignissim.</div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img class="card_ico" src="img/workcard6.png">
+                    <div class="card_text">
+                        <div class="card_title">DIGITAL</div>
+                        <div class="card_subscript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit.</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!--WORK_BG-->
+        
+        <div class="design">
+            <div class="design_header">
+                <div class="subtitle">For all devices</div>
+                <div class="title">unique design</div>
+            </div> 
+        </div>
+        
+        <div class="container">
+            <div class="service" id="service">
+                <div class="header">
+                    <div class="subtitle">service</div>
+                    <div class="title">What we do</div>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, numquam deserunt obcaecati iure possimus, totam a debitis sint qui commodi. Fugit tenetur blanditiis, vero ea molestiae molestias labore nam eius!</div>
+                <div class="tab_all">
+                    <div class="tab_img"><img src="../MOGO/img/tab_img.jpg"></div>
+                    <div class="tabs">
+                        <div class="tab active" data-tab="#tab1" data-header="#header1">
+                            <div class="header active" id="header1">
+                                <div class="tab_ico"><img src="../MOGO/img/PICTURE.png"></div>
+                                <div class="tab_title">PHOTOGRAPHY</div>
+                            </div>
+                            <div class="tab_content active" id="tab1"><p><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil architecto corrupti assumenda tenetur, amet sequi deleniti incidunt, expedita nam dolorem quasi? Corrupti distinctio, ab id aliquid quidem, expedita cupiditate nesciunt repellendus cum, neque architecto? Eos exercitationem consequuntur eum, eaque harum quos suscipit est repudiandae vitae! Veritatis expedita saepe quos? Nulla, fugiat voluptate quisquam quia at iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, odio voluptatibus aliquid aliquam optio aspernatur voluptates sequi cum ipsa eius? Laudantium maiores placeat dolor quibusdam voluptates obcaecati aspernatur, optio non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus tempore ipsum maxime corporis enim natus doloribus aperiam recusandae libero?</i></p></div>
+                        </div>
+                        <div class="tab" data-tab="#tab2" data-header="#header2">
+                            <div class="header" id="header2">
+                                <div class="tab_ico"><img src="../MOGO/img/EQUALIZER.png"></div>
+                                <div class="tab_title">CREATIVITY</div>
+                            </div>
+                            <div class="tab_content" id="tab2"><p><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil architecto corrupti assumenda tenetur, amet sequi deleniti incidunt, expedita nam dolorem quasi? Corrupti distinctio, ab id aliquid quidem, expedita cupiditate nesciunt repellendus cum, neque architecto? Eos exercitationem consequuntur eum, eaque harum quos suscipit est repudiandae vitae! Veritatis expedita saepe quos? Nulla, fugiat voluptate quisquam quia at iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, odio voluptatibus aliquid aliquam optio aspernatur voluptates sequi cum ipsa eius? Laudantium maiores placeat dolor quibusdam voluptates obcaecati aspernatur, optio non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus tempore ipsum maxime corporis enim natus doloribus aperiam recusandae libero?</i></p></div>
+                        </div>
+                        <div class="tab" data-tab="#tab3" data-header="#header3">
+                            <div class="header" id="header3">
+                                <div class="tab_ico"><img src="../MOGO/img/BULLSEYE.png"></div>
+                                <div class="tab_title">WEB DESIGN</div>
+                            </div>
+                            <div class="tab_content" id="tab3"><p><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil architecto corrupti assumenda tenetur, amet sequi deleniti incidunt, expedita nam dolorem quasi? Corrupti distinctio, ab id aliquid quidem, expedita cupiditate nesciunt repellendus cum, neque architecto? Eos exercitationem consequuntur eum, eaque harum quos suscipit est repudiandae vitae! Veritatis expedita saepe quos? Nulla, fugiat voluptate quisquam quia at iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, odio voluptatibus aliquid aliquam optio aspernatur voluptates sequi cum ipsa eius? Laudantium maiores placeat dolor quibusdam voluptates obcaecati aspernatur, optio non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus tempore ipsum maxime corporis enim natus doloribus aperiam recusandae libero?</i></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment_bg">
+            <div class="container">
+                <div class="slider_shell">
+                    <div class="slider1"></div>
+                </div>
+                <div class="comment">
+                    <div class="comment_ico"><img src="../MOGO/img/SPEECH 4.png"></div>
+                    <div class="comment_text">
+                        <div class="text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi velit dignissimos beatae cum et provident dolorem asperiores animi quidem commodi consequuntur, in quae rem voluptatibus. Perferendis, alias. Nam, maiores corporis?"</div>
+                        <div class="name">Jon Doe</div>
+                    </div>
+                </div>
+                <div class="slider_shell">
+                    <div class="slider2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="team_header">
+                <div class="team_subtitle">Who we are</div>
+                <div class="team_title">Meet Our Team</div>
+                <div class="team_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eaque sit velit cum suscipit tenetur sint vel pariatur mollitia consectetur praesentium minima adipisci quod illo, sequi atque provident ipsam perspiciatis alias delectus fugit dicta.</div>
+            </div>
+
+            <div class="team_card_all">
+
+                <div class="team_card">
+                    <div class="team_card_img">
+                        <img src="../MOGO/img/Layer 16.png" id="layer16">
+                        <div class="flat_icons">
+                            <div>
+                                <svg class="facebook_ico">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <svg class="twitter_ico">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <svg class="pint_ico">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <svg class="inst_ico">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team_card_name">MATTHEW DIX</div>
+                    <div class="team_card_role">Graphic Design</div>
+                </div>
+
+                <div class="team_card">
+                    <div class="team_card_img">
+                        <img src="../MOGO/img/worker_2.png">
+                        <div class="flat_icons">
+                            <div>
+                                <svg class="facebook_ico">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <svg class="twitter_ico">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <svg class="pint_ico">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <svg class="inst_ico">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team_card_name">CHRISTOPHER CAMPBELL</div>
+                    <div class="team_card_role">Branding/UX design</div>
+                </div>
+
+                <div class="team_card">
+                    <div class="team_card_img">
+                        <img src="../MOGO/img/worker_3.png">
+                        <div class="flat_icons">
+                            <div>
+                                <svg class="facebook_ico">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <svg class="twitter_ico">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <svg class="pint_ico">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <svg class="inst_ico">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team_card_name">MICHAEL FERTIG</div>
+                    <div class="team_card_role">Developer</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="barbs_bg">
+            <div class="container">
+                <div class="barbs_img"><img src="../MOGO/img/barb1.png"></div>
+                <div class="barbs_img"><img src="../MOGO/img/barb2.png"></div>
+                <div class="barbs_img" id="barb3"><img src="../MOGO/img/barb3.png"></div>
+                <div class="barbs_img"><img src="../MOGO/img/barb4.png"></div>
+                <div class="barbs_img" id="barb5"><img src="../MOGO/img/barb5.png"></div>
+                <div class="barbs_img"><img src="../MOGO/img/barb6.png"></div>
+            </div>
+        </div>
+
+        <div class="container" id="work">
+            <div class="work3_header">
+                <div class="work3_subtitle">What we do</div>
+                <div class="work3_title">SOME OF OUR WORK</div>
+                <div class="work3_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus beatae corporis dolore voluptatum officia modi fugit esse, quidem a eligendi quas, laborum suscipit ullam, magnam eaque provident culpa debitis reiciendis.</div>
+            </div>
+        </div>
+
+        <div class="work3">
+            <div class="work">
+                <img class="work3_img" src="../MOGO/img/work1.png">
+                <div class="work3_inner">
+                    <div class="work_img_small"><img src="../MOGO/img/PICTURE_small.png"></div>
+                    <div class="work_title">CREATIVELY DESIGNED</div>
+                    <div class="work_subtitle">Lorem ipsum dolor sit.</div>
+                </div>
+            </div>
+            <div class="work">
+                <img class="work3_img" src="../MOGO/img/work2.png">
+                <div class="work3_inner">
+                    <div class="work_img_small"><img src="../MOGO/img/PICTURE_small.png"></div>
+                    <div class="work_title">CREATIVELY DESIGNED</div>
+                    <div class="work_subtitle">Lorem ipsum dolor sit.</div>
+                </div>
+            </div>
+            <div class="work" id="work3">
+                <img class="work3_img" src="../MOGO/img/work3.png">
+                <div class="work3_inner">
+                    <div class="work_img_small"><img src="../MOGO/img/PICTURE_small.png"></div>
+                    <div class="work_title">CREATIVELY DESIGNED</div>
+                    <div class="work_subtitle">Lorem ipsum dolor sit.</div>
+                </div>
+            </div>
+            <div class="work">
+                <img class="work3_img" src="../MOGO/img/work4.png">
+                <div class="work3_inner">
+                    <div class="work_img_small"><img src="../MOGO/img/PICTURE_small.png"></div>
+                    <div class="work_title">CREATIVELY DESIGNED</div>
+                    <div class="work_subtitle">Lorem ipsum dolor sit.</div>
+                </div>
+            </div>
+            <div class="work">
+                <img class="work3_img" src="../MOGO/img/work5.png">
+                <div class="work3_inner">
+                    <div class="work_img_small"><img src="../MOGO/img/PICTURE_small.png"></div>
+                    <div class="work_title">CREATIVELY DESIGNED</div>
+                    <div class="work_subtitle">Lorem ipsum dolor sit.</div>
+                </div>
+            </div>
+            <div class="work">
+                <img class="work3_img" src="../MOGO/img/work6.png">
+                <div class="work3_inner">
+                    <div class="work_img_small"><img src="../MOGO/img/PICTURE_small.png"></div>
+                    <div class="work_title">CREATIVELY DESIGNED</div>
+                    <div class="work_subtitle">Lorem ipsum dolor sit.</div>
+                </div>
+            </div>
+            <div class="work">
+                <img class="work3_img" src="../MOGO/img/work7.png">
+                <div class="work3_inner">
+                    <div class="work_img_small"><img src="../MOGO/img/PICTURE_small.png"></div>
+                    <div class="work_title">CREATIVELY DESIGNED</div>
+                    <div class="work_subtitle">Lorem ipsum dolor sit.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment2_bg">
+            <div class="container">
+                <div class="slider_shell">
+                    <div class="slider1"></div>
+                </div>
+                <div class="comment2">
+                    <div class="comment2_ico"><img src="../MOGO/img/comment2_ico.png"></div>
+                    <div class="comment2_text">
+                        <div class="text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi velit dignissimos beatae cum et provident dolorem asperiores animi quidem commodi consequuntur, in quae rem voluptatibus."</div>
+                        <div class="name">Joshua Earle</div>
+                    </div>
+                </div>
+                <div class="slider_shell">
+                    <div class="slider2"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="clients"> 
+            <div class="clients_bg"></div>
+            <div class="container">
+                <div class="clients_header">
+                    <div class="clients_subtitle">Happy Clients</div>
+                    <div class="clients_title">WHAT PEOPLE SAY</div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="reviews">
+                    <div class="review">
+                        <div class="review_ico"><img src="../MOGO/img/clients_ico.png"></div>
+                        <div class="review_text">
+                            <div class="review_name">MATTHEW DIX</div>
+                            <div class="review_role">Graphic Design</div>
+                            <div class="review_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam optio vero minus quidem aspernatur eum. Lorem ipsum dolor sit.</div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review_ico"><img src="../MOGO/img/clients_ico3.png" id="clico2"></div>
+                        <div class="review_text">
+                            <div class="review_name">MATTHEW DIX</div>
+                            <div class="review_role">Graphic Design</div>
+                            <div class="review_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam optio vero minus quidem aspernatur eum. Lorem ipsum dolor sit.</div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review_ico"><img src="../MOGO/img/clients_ico2.png" id="clico3"></div>
+                        <div class="review_text">
+                            <div class="review_name">MATTHEW DIX</div>
+                            <div class="review_role">Graphic Design</div>
+                            <div class="review_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam optio vero minus quidem aspernatur eum. Lorem ipsum dolor sit.</div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review_ico"><img src="../MOGO/img/clients_ico4.png" id="clico4"></div>
+                        <div class="review_text">
+                            <div class="review_name">MATTHEW DIX</div>
+                            <div class="review_role">Graphic Design</div>
+                            <div class="review_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam optio vero minus quidem aspernatur eum. Lorem ipsum dolor sit.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="blog" id="blog">
+                <div class="blog_header">
+                    <div class="blog_subtitle">Our stories</div>
+                    <div class="blog_title">LATEST BLOG</div>
+                </div>
+
+                <div class="blog_cards">
+                    <div class="blog_card">
+                        <div class="blog_card_img">
+                            <img src="../MOGO/img/blog1.png">
+                            <div class="blog_date">
+                                <div class="date">15</div>
+                                <div class="months">Jan</div>
+                            </div>
+                        </div>
+                        <div class="blog_info">
+                            <div class="text">
+                                <div class="blog_card_title">Lorem ipsum dolor sit amet.</div>
+                                <div class="blog_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veniam commodi aperiam fugiat a!</div>
+                            </div>
+                            <div class="blog_card_stats">
+                                <div class="blog_card_views"><svg id="view"><use xlink:href="#views"></use></svg>542</div>
+                                <div class="blog_card_comment"><svg id="comments"><use xlink:href="#comment"></use></svg>17</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_card">
+                        <div class="blog_card_img">
+                            <img src="../MOGO/img/blog2.png">
+                            <div class="blog_date">
+                                <div class="date">14</div>
+                                <div class="months">Jan</div>
+                            </div>
+                        </div>
+                        <div class="blog_info">
+                            <div class="text">
+                                <div class="blog_card_title">Lorem ipsum dolor sit amet.</div>
+                                <div class="blog_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veniam commodi aperiam fugiat a!</div>
+                            </div>
+                            <div class="blog_card_stats">
+                                <div class="blog_card_views"><svg id="view"><use xlink:href="#views"></use></svg>542</div>
+                                <div class="blog_card_comment"><svg id="comments"><use xlink:href="#comment"></use></svg>17</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_card">
+                        <div class="blog_card_img">
+                            <img src="../MOGO/img/blog3.png">
+                            <div class="blog_date">
+                                <div class="date">12</div>
+                                <div class="months">Jan</div>
+                            </div>
+                        </div>
+                        <div class="blog_info">
+                            <div class="text">
+                                <div class="blog_card_title">Lorem ipsum dolor sit amet.</div>
+                                <div class="blog_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veniam commodi aperiam fugiat a!</div>
+                            </div>
+                            <div class="blog_card_stats">
+                                <div class="blog_card_views"><svg id="view"><use xlink:href="#views"></use></svg>542</div>
+                                <div class="blog_card_comment"><svg id="comments"><use xlink:href="#comment"></use></svg>17</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="open_map">
+            <div class="container">
+                <div class="open_map_ico"><svg><use xlink:href="#location"></use></svg></div>
+                <div class="open_map_title">OPEN MAP</div>
+            </div>
+        </div>
+
+        <div class="contacts" id="contacts">
+            <div class="container">
+                <div class="footer1">
+                    <div class="mogo_info">
+                        <div style="color: #cccccc; font-size: 46px; font-weight: 700;"class="mogo_info_title">MoGo</div>
+                        <div class="mogo_info_text" style="max-width: 460px; color: #999999;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ratione asperiores eos quasi praesentium possimus ut quo veniam. A sapiente molestias dicta repudiandae blanditiis assumenda.</div>
+                    </div>
+                    <div class="follow">
+                        <div class="followers" style="margin: 30px 0 15px;padding-bottom: 10px; border-bottom: 1px solid #e5e5e5; max-width: 460px;"><span style="margin: 0 5px 0 0;">15k</span>followers</div>
+                        <div class="follow_rec"><i style="color: #999999;">Follow Us:</i> 
+                            <div class="follow_rec_icos">
+                                <svg>
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="#g+"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="#youtube"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="#tumblr"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <form action="#" name="myForm" accept-charset="UTF-8">
+                            <input type="email" name="email" placeholder="Your Email..." class="email">
+                            <input type="submit" name="subscribe" class="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <div class="footer_blog">
+                        <div class="footer_blog_title">BLOGS</div>
+                        <div class="footer_blog_unit">
+                            <div class="footer_blog_unit_img"><img src="../MOGO/img/blog4.png"></div>
+                            <div class="footer_blog_unit_text">
+                                <div class="footer_blog_unit_name">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+                                <div class="footer_blog_unit_date">Jan 9,2016</div>
+                            </div>
+                        </div>
+                        <div class="footer_blog_unit">
+                            <div class="footer_blog_unit_img"><img src="../MOGO/img/blog_5.png"></div>
+                            <div class="footer_blog_unit_text">
+                                <div class="footer_blog_unit_name">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+                                <div class="footer_blog_unit_date">Jan 9,2016</div>
+                            </div>
+                        </div>
+                        <div class="footer_blog_unit">
+                            <div class="footer_blog_unit_img"><img src="../MOGO/img/blog_6.png"></div>
+                            <div class="footer_blog_unit_text">
+                                <div class="footer_blog_unit_name">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+                                <div class="footer_blog_unit_date">Jan 9,2016</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer3">
+                    <div class="instagram">
+                        <div class="insta_title" style="font-weight: 700; margin: 0 0 40px 0;">INSTAGRAM</div>
+                        <div class="insta_images">
+                            <img src="../MOGO/img/inst_img.png">
+                            <img src="../MOGO/img/inst_img.png">
+                            <img src="../MOGO/img/inst_img.png">
+                            <img src="../MOGO/img/inst_img.png">
+                            <img src="../MOGO/img/inst_img.png">
+                            <img src="../MOGO/img/inst_img.png">
+                            <img src="../MOGO/img/inst_img.png">
+                            <img src="../MOGO/img/inst_img.png">
+                            <img src="../MOGO/img/inst_img.png" id="insta_img1">
+                        </div>
+                        <div class="insta_viewmore" style="font-family: 'Roboto', sans-serif;"><i>View more photos</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright" style="padding: 15px 0; font-weight: 700; text-align: center;">2016 MoGo free PSD template by <span style="color: #f38181;font-size: 14px;">Laaqiq</span></div>
+    </div>
+
+
+</div>
+
+
+
+            
+            <script src="../MOGO/script.js"></script>
+</body>
+</html>
